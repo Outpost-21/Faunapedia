@@ -19,6 +19,7 @@ namespace Faunapedia
 
         public bool unknownShown = true;
         public bool hideLabels = false;
+        public bool unknownSilhouettes = true;
 
         public override void ExposeData()
         {
@@ -29,6 +30,7 @@ namespace Faunapedia
 
             Scribe_Values.Look(ref unknownShown, "unknownShown", true);
             Scribe_Values.Look(ref hideLabels, "hideLabels", false);
+            Scribe_Values.Look(ref unknownSilhouettes, "unknownSilhouettes", true);
         }
     }
 }

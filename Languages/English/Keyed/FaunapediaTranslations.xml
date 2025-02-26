@@ -11,5 +11,7 @@
 	<Faunapedia.UnknownShownDesc>If enabled, shows a question mark with the name of unknown animals in the faunapedia, so you can see which ones you have not seen/tamed. If disabled hides them completely and only lists known animals.</Faunapedia.UnknownShownDesc>
 	<Faunapedia.HideLabels>Hide Labels</Faunapedia.HideLabels>
 	<Faunapedia.HideLabelsDesc>If enables, hides the labels in the Faunapedia for better visibility, you can still see the name of an animal by hovering over it and a tooltip will show instead.</Faunapedia.HideLabelsDesc>
+	<Faunapedia.UnknownSilhouettes>Unknown Silhouettes</Faunapedia.UnknownSilhouettes>
+	<Faunapedia.UnknownSilhouettesDesc>If enabled, shows silhouettes for unknown animals, if disabled shows a question mark.</Faunapedia.UnknownSilhouettesDesc>
 
 </LanguageData>

@@ -157,7 +157,14 @@ namespace Faunapedia
                 }
                 else 
                 {
-                    Widgets.DrawTextureFitted(animalRect, MaterialPool.MatFrom("UI/Overlays/QuestionMark").mainTexture, 0.8f);
+                    if (FaunapediaMod.settings.unknownSilhouettes)
+                    {
+                        Widgets.DefIcon(animalRect, animalDef, null, 1, null, false, Color.black, null, null);
+                    }
+                    else
+                    {
+                        Widgets.DrawTextureFitted(animalRect, MaterialPool.MatFrom("UI/Overlays/QuestionMark").mainTexture, 0.8f);
+                    }
                     if (Mouse.IsOver(inRect))
                     {
                         TooltipHandler.TipRegion(inRect, animalDef.LabelCap);
