@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Faunapedia</name>
+	<author>Neronix17</author>
+	<packageId>Neronix17.UI.Faunapedia</packageId>
+	<!-- <modIconPath IgnoreIfNoMatchingField="True">Faunapedia/ModIcon</modIconPath> -->
+	<url>https://www.patreon.com/neronix17</url>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<description>Simple new UI for showing known animals, options allow for animals to be unlocked through various means, from simply being on the map to having to tame them. You can also choose to have them all known from the start, all the info is tracked regardless so this can be changed at any time.There's also an option to hide unknown animals entirely instead of having them visible in the screen with their info garbled.</description>
+</ModMetaData>

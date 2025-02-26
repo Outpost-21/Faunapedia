@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+	<Faunapedia.UnlockedByDefault>Unlocked by Default</Faunapedia.UnlockedByDefault>
+	<Faunapedia.UnlockedByDefaultDesc>If enabled, animals in the faunapedia are unlocked by default, they do not have to have been seen or tamed to be inspected.</Faunapedia.UnlockedByDefaultDesc>
+	<Faunapedia.UnlockedBySighting>Unlocked by Sighting</Faunapedia.UnlockedBySighting>
+	<Faunapedia.UnlockedBySightingDesc>If enabled, animals are unlocked in the faunapedia as they as seen, which means just being on any map loaded. Unlocked by Default overrides this option if active.</Faunapedia.UnlockedBySightingDesc>
+	<Faunapedia.UnlockedByTaming>Unlocked by Taming</Faunapedia.UnlockedByTaming>
+	<Faunapedia.UnlockedByTamingDesc>If enabled, animals are unlocked in the faunapedia when tamed, the previous two options override this if they either are active.</Faunapedia.UnlockedByTamingDesc>
+	<Faunapedia.UnknownShown>Unknown Animals Shown</Faunapedia.UnknownShown>
+	<Faunapedia.UnknownShownDesc>If enabled, shows a question mark with the name of unknown animals in the faunapedia, so you can see which ones you have not seen/tamed. If disabled hides them completely and only lists known animals.</Faunapedia.UnknownShownDesc>
+
+</LanguageData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<MainButtonDef>
+		<defName>Faunapedia</defName>
+		<label>faunapedia</label>
+		<description>Listing of known animals.</description>
+		<tabWindowClass>Faunapedia.MainTabWindow_Faunapedia</tabWindowClass>
+		<order>45</order>
+		<closesWorldView>true</closesWorldView>
+	</MainButtonDef>
+
+</Defs>

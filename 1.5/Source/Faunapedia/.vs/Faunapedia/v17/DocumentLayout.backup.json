@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|f:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.5\\source\\faunapedia\\maintabwindow\\maintabwindow_faunapedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|solutionrelative:maintabwindow\\maintabwindow_faunapedia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|f:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.5\\source\\faunapedia\\gamecomps\\gamecomp_animaltracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|solutionrelative:gamecomps\\gamecomp_animaltracking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|f:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.5\\source\\faunapedia\\harmony\\patch_interactionworker_recruitattempt_dorecruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|solutionrelative:harmony\\patch_interactionworker_recruitattempt_dorecruit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|f:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.5\\source\\faunapedia\\harmony\\patch_thing_spawnsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|solutionrelative:harmony\\patch_thing_spawnsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|f:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.5\\source\\faunapedia\\utilities\\settingsutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|solutionrelative:utilities\\settingsutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|f:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.5\\source\\faunapedia\\utilities\\findutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|solutionrelative:utilities\\findutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|f:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.5\\source\\faunapedia\\faunapediamod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|solutionrelative:faunapediamod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|f:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.5\\source\\faunapedia\\faunapediasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7529B07-5F7C-4955-BEA2-7AD01AB9A413}|Faunapedia.csproj|solutionrelative:faunapediasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SettingsUtil.cs",
+              "DocumentMoniker": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\Utilities\\SettingsUtil.cs",
+              "RelativeDocumentMoniker": "Utilities\\SettingsUtil.cs",
+              "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\Utilities\\SettingsUtil.cs",
+              "RelativeToolTip": "Utilities\\SettingsUtil.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAGoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-26T00:41:33.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainTabWindow_Faunapedia.cs",
+              "DocumentMoniker": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\MainTabWindow\\MainTabWindow_Faunapedia.cs",
+              "RelativeDocumentMoniker": "MainTabWindow\\MainTabWindow_Faunapedia.cs",
+              "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\MainTabWindow\\MainTabWindow_Faunapedia.cs",
+              "RelativeToolTip": "MainTabWindow\\MainTabWindow_Faunapedia.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAAAKUAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T23:44:09.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Patch_Thing_SpawnSetup.cs",
+              "DocumentMoniker": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\Harmony\\Patch_Thing_SpawnSetup.cs",
+              "RelativeDocumentMoniker": "Harmony\\Patch_Thing_SpawnSetup.cs",
+              "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\Harmony\\Patch_Thing_SpawnSetup.cs",
+              "RelativeToolTip": "Harmony\\Patch_Thing_SpawnSetup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T23:40:23.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FindUtil.cs",
+              "DocumentMoniker": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\Utilities\\FindUtil.cs",
+              "RelativeDocumentMoniker": "Utilities\\FindUtil.cs",
+              "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\Utilities\\FindUtil.cs",
+              "RelativeToolTip": "Utilities\\FindUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T23:35:22.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Patch_InteractionWorker_RecruitAttempt_DoRecruit.cs",
+              "DocumentMoniker": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\Harmony\\Patch_InteractionWorker_RecruitAttempt_DoRecruit.cs",
+              "RelativeDocumentMoniker": "Harmony\\Patch_InteractionWorker_RecruitAttempt_DoRecruit.cs",
+              "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\Harmony\\Patch_InteractionWorker_RecruitAttempt_DoRecruit.cs",
+              "RelativeToolTip": "Harmony\\Patch_InteractionWorker_RecruitAttempt_DoRecruit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T23:30:22.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameComp_AnimalTracking.cs",
+              "DocumentMoniker": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\GameComps\\GameComp_AnimalTracking.cs",
+              "RelativeDocumentMoniker": "GameComps\\GameComp_AnimalTracking.cs",
+              "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\GameComps\\GameComp_AnimalTracking.cs",
+              "RelativeToolTip": "GameComps\\GameComp_AnimalTracking.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T23:23:54.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FaunapediaMod.cs",
+              "DocumentMoniker": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\FaunapediaMod.cs",
+              "RelativeDocumentMoniker": "FaunapediaMod.cs",
+              "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\FaunapediaMod.cs",
+              "RelativeToolTip": "FaunapediaMod.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwEAAAACeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T23:16:48.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FaunapediaSettings.cs",
+              "DocumentMoniker": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\FaunapediaSettings.cs",
+              "RelativeDocumentMoniker": "FaunapediaSettings.cs",
+              "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\FaunapediaSettings.cs",
+              "RelativeToolTip": "FaunapediaSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T23:16:27.737Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
