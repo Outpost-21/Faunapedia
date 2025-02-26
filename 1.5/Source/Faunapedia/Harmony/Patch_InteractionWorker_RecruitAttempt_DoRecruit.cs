@@ -17,7 +17,7 @@ namespace Faunapedia
         {
             if (recruitee != null)
             {
-                if (recruitee.RaceProps.Animal && recruitee.RaceProps.IsFlesh)
+                if (recruitee.def.IsFaunapediaAnimal())
                 {
                     FindUtil.AnimalTracking.MarkAnimalAsTamed(recruitee.def);
                 }

@@ -16,6 +16,7 @@ namespace Faunapedia
     public class MainTabWindow_Faunapedia : MainTabWindow
     {
         public QuickSearchWidget quickSearchWidget = new QuickSearchWidget();
+        public string searchFilter = "";
 
         public float scrollHeight;
         public Vector2 scrollPos;
@@ -58,6 +59,10 @@ namespace Faunapedia
             Rect rect = new Rect(viewRect.x, viewRect.y, viewRect.width, 999999f);
             listing.Begin(rect);
             // ============================ CONTENTS ================================
+            Rect searchRect = listing.GetRect(30f);
+            quickSearchWidget.OnGUI(searchRect);
+            searchFilter = quickSearchWidget.filter.Text;
+            listing.GapLine();
             DoContents(listing);
             // ======================================================================
             scrollHeight = listing.CurHeight;
@@ -67,11 +72,11 @@ namespace Faunapedia
 
         public void DoContents(Listing_Standard listing)
         {
-            float abCurY = 0f;
+            float abCurY = 38f;
             float abCurX = 0f;
             string curSource = "";
             int curCount = 0;
-            List<ThingDef> animalList = DefDatabase<ThingDef>.AllDefs.Where(a => a.race != null && a.race.Animal && a.race.IsFlesh).ToList();
+            List<ThingDef> animalList = AnimalUtil.GetListableAnimals().Where(a => a.label.Contains(searchFilter)).ToList();
             for (int i = 0; i < animalList.Count(); i++)
             {
                 Def def = animalList[i] as Def;
@@ -131,6 +136,7 @@ namespace Faunapedia
                     }
                 }
             }
+            listing.curY = abCurY + 80f;
         }
 
         public void DrawAnimalCard(Rect rect, Listing_Standard listing, ThingDef animalDef, bool obfuscate = false)

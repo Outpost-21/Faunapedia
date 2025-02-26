@@ -18,7 +18,7 @@ namespace Faunapedia
         {
             animalsSeen = new Dictionary<ThingDef, bool>();
             animalsTamed = new Dictionary<ThingDef, bool>();
-            foreach(ThingDef def in DefDatabase<ThingDef>.AllDefs.Where(d => d.race != null && d.race.Animal && d.race.IsFlesh).ToList())
+            foreach(ThingDef def in DefDatabase<ThingDef>.AllDefs.Where(d => d.IsFaunapediaAnimal()).ToList())
             {
                 animalsSeen.Add(def, false);
                 animalsTamed.Add(def, false);

@@ -74,6 +74,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Utilities\AnimalUtil.cs" />
     <Compile Include="Utilities\FindUtil.cs" />
     <Compile Include="MainTabWindow\MainTabWindow_Faunapedia.cs" />
     <Compile Include="Harmony\Patch_InteractionWorker_RecruitAttempt_DoRecruit.cs" />

@@ -17,7 +17,7 @@ namespace Faunapedia
             if(__instance as Pawn != null)
             {
                 Pawn pawn = __instance as Pawn;
-                if(pawn.RaceProps.Animal && pawn.RaceProps.IsFlesh)
+                if(pawn.def.IsFaunapediaAnimal())
                 {
                     FindUtil.AnimalTracking.MarkAnimalAsSeen(pawn.def);
                 }
