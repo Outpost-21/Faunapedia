@@ -16,12 +16,24 @@ namespace Faunapedia
 
         public GameComp_AnimalTracking(Game game)
         {
-            animalsSeen = new Dictionary<ThingDef, bool>();
-            animalsTamed = new Dictionary<ThingDef, bool>();
-            foreach(ThingDef def in DefDatabase<ThingDef>.AllDefs.Where(d => d.IsFaunapediaAnimal()).ToList())
+            if (animalsSeen.NullOrEmpty())
             {
-                animalsSeen.Add(def, false);
-                animalsTamed.Add(def, false);
+                animalsSeen = new Dictionary<ThingDef, bool>();
+            }
+            if (animalsTamed.NullOrEmpty())
+            {
+                animalsTamed = new Dictionary<ThingDef, bool>();
+            }
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.Where(d => d.IsFaunapediaAnimal()).ToList())
+            {
+                if (!animalsSeen.ContainsKey(def))
+                {
+                    animalsSeen.Add(def, false);
+                }
+                if (!animalsTamed.ContainsKey(def))
+                {
+                    animalsTamed.Add(def, false);
+                }
             }
         }
 
@@ -33,6 +45,13 @@ namespace Faunapedia
         public void MarkAnimalAsTamed(ThingDef thingDef) 
         {
             animalsTamed[thingDef] = true;
+        }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Collections.Look(ref animalsSeen, "animalsSeen");
+            Scribe_Collections.Look(ref animalsTamed, "animalsTamed");
         }
     }
 }

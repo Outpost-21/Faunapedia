@@ -38,11 +38,17 @@ namespace Faunapedia
 
         public static bool IsKnownAnimal(this ThingDef thingDef)
         {
-            if (FaunapediaMod.settings.unlockedByDefault 
-                || (FaunapediaMod.settings.unlockedBySighting && FindUtil.AnimalTracking.animalsSeen[thingDef]) 
-                || (FaunapediaMod.settings.unlockedByTaming && FindUtil.AnimalTracking.animalsTamed[thingDef]))
+            if (FaunapediaMod.settings.unlockedByDefault)
             {
                 return true;
+            }
+            else if(FaunapediaMod.settings.unlockedBySighting)
+            {
+                return FindUtil.AnimalTracking.animalsSeen[thingDef];
+            }
+            else if (FaunapediaMod.settings.unlockedByTaming)
+            {
+                return FindUtil.AnimalTracking.animalsTamed[thingDef];
             }
             return false;
         }

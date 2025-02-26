@@ -9,5 +9,7 @@
 	<Faunapedia.UnlockedByTamingDesc>If enabled, animals are unlocked in the faunapedia when tamed, the previous two options override this if they either are active.</Faunapedia.UnlockedByTamingDesc>
 	<Faunapedia.UnknownShown>Unknown Animals Shown</Faunapedia.UnknownShown>
 	<Faunapedia.UnknownShownDesc>If enabled, shows a question mark with the name of unknown animals in the faunapedia, so you can see which ones you have not seen/tamed. If disabled hides them completely and only lists known animals.</Faunapedia.UnknownShownDesc>
+	<Faunapedia.HideLabels>Hide Labels</Faunapedia.HideLabels>
+	<Faunapedia.HideLabelsDesc>If enables, hides the labels in the Faunapedia for better visibility, you can still see the name of an animal by hovering over it and a tooltip will show instead.</Faunapedia.HideLabelsDesc>
 
 </LanguageData>

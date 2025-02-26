@@ -85,7 +85,7 @@ namespace Faunapedia
                     curSource = def.modContentPack.Name;
                     if (abCurX != 0f)
                     {
-                        abCurY += 80f;
+                        abCurY += 88f;
                         abCurX = 0f;
                         curCount = 0;
                     }
@@ -103,24 +103,14 @@ namespace Faunapedia
                     GUI.color = color;
                     abCurY += 12f;
                 }
-                //DrawSelector(new Rect(abCurX, abCurY, 80f, 75f), listing, def);
-                if (FaunapediaMod.settings.unlockedByDefault)
+                if (animalList[i].IsKnownAnimal())
                 {
-                    DrawAnimalCard(new Rect(abCurX, abCurY, 80f, 75f), listing, animalList[i]);
-                }
-                else if (FaunapediaMod.settings.unlockedBySighting && AnimalTracking.animalsSeen[animalList[i]])
-                {
-                    DrawAnimalCard(new Rect(abCurX, abCurY, 80f, 75f), listing, animalList[i]);
-                }
-                else if (FaunapediaMod.settings.unlockedByTaming && AnimalTracking.animalsTamed[animalList[i]])
-                {
-                    DrawAnimalCard(new Rect(abCurX, abCurY, 80f, 75f), listing, animalList[i]);
+                    DrawAnimalCard(new Rect(abCurX, abCurY, 80f, 75f), listing, animalList[i], false);
                 }
                 else if (FaunapediaMod.settings.unknownShown)
                 {
                     DrawAnimalCard(new Rect(abCurX, abCurY, 80f, 75f), listing, animalList[i], true);
                 }
-                // Handle Row/Column Position.
                 curCount++;
                 if (curCount < animalList.Count)
                 {
@@ -168,16 +158,23 @@ namespace Faunapedia
                 else 
                 {
                     Widgets.DrawTextureFitted(animalRect, MaterialPool.MatFrom("UI/Overlays/QuestionMark").mainTexture, 0.8f);
+                    if (Mouse.IsOver(inRect))
+                    {
+                        TooltipHandler.TipRegion(inRect, animalDef.LabelCap);
+                    }
                 }
-                string labelCap = animalDef.LabelCap;
-                float labelHeight = Text.CalcHeight(labelCap, inRect.width + 0.1f);
-                Rect animalLabel = new Rect(inRect.x, inRect.yMax - labelHeight + 12f, inRect.width, labelHeight);
-                GUI.DrawTexture(animalLabel, TexUI.GrayTextBG);
-                Text.Font = GameFont.Tiny;
-                Text.Anchor = TextAnchor.UpperCenter;
-                Widgets.Label(animalLabel, labelCap);
-                Text.Anchor = TextAnchor.UpperLeft;
-                Text.Font = GameFont.Small;
+                if (!FaunapediaMod.settings.hideLabels)
+                {
+                    string labelCap = animalDef.LabelCap;
+                    float labelHeight = Text.CalcHeight(labelCap, inRect.width + 0.1f);
+                    Rect animalLabel = new Rect(inRect.x, inRect.yMax - labelHeight + 12f, inRect.width, labelHeight);
+                    GUI.DrawTexture(animalLabel, TexUI.GrayTextBG);
+                    Text.Font = GameFont.Tiny;
+                    Text.Anchor = TextAnchor.UpperCenter;
+                    Widgets.Label(animalLabel, labelCap);
+                    Text.Anchor = TextAnchor.UpperLeft;
+                    Text.Font = GameFont.Small;
+                }
             }
         }
     }

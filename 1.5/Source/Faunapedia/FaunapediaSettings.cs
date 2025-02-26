@@ -18,6 +18,7 @@ namespace Faunapedia
         public bool unlockedByTaming = true;
 
         public bool unknownShown = true;
+        public bool hideLabels = false;
 
         public override void ExposeData()
         {
@@ -27,6 +28,7 @@ namespace Faunapedia
             Scribe_Values.Look(ref unlockedByTaming, "unlockedByTaming", true);
 
             Scribe_Values.Look(ref unknownShown, "unknownShown", true);
+            Scribe_Values.Look(ref hideLabels, "hideLabels", false);
         }
     }
 }
