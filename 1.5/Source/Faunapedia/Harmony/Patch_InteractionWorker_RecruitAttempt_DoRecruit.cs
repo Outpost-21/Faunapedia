@@ -10,7 +10,7 @@ using Verse;
 
 namespace Faunapedia
 {
-    [HarmonyPatch(typeof(InteractionWorker_RecruitAttempt), "DoRecruit", new Type[] { typeof(Pawn), typeof(Pawn), typeof(bool) })]
+    [HarmonyPatch(typeof(InteractionWorker_RecruitAttempt), "DoRecruit", new Type[] { typeof(Pawn), typeof(Pawn), typeof(string), typeof(string), typeof(bool), typeof(bool) })]
     public static class Patch_InteractionWorker_RecruitAttempt_DoRecruit
     {
         public static void Postfix(Pawn recruitee)
