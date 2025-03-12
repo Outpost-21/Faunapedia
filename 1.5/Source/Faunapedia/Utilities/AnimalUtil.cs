@@ -13,7 +13,7 @@ namespace Faunapedia
     {
         public static bool IsFaunapediaAnimal(this ThingDef def)
         {
-            if(def.race != null && def.race.Animal && def.race.IsFlesh && !def.IsCorpse)
+            if(def.race != null && def.race.Animal && def.race.IsFlesh && !def.IsCorpse && def.modContentPack != null)
             {
                 return true;
             }
