@@ -16,6 +16,17 @@ namespace Faunapedia
 
         public GameComp_AnimalTracking(Game game)
         {
+            UpdateDictionaries();
+        }
+
+        public override void LoadedGame()
+        {
+            base.LoadedGame();
+            UpdateDictionaries();
+        }
+
+        public void UpdateDictionaries()
+        {
             if (animalsSeen.NullOrEmpty())
             {
                 animalsSeen = new Dictionary<ThingDef, bool>();
