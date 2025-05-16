@@ -64,7 +64,7 @@ namespace Faunapedia
             listing.CheckboxEnhanced("Faunapedia.UnlockedBySighting".Translate(), "Faunapedia.UnlockedBySightingDesc".Translate(), ref settings.unlockedBySighting);
             listing.CheckboxEnhanced("Faunapedia.UnlockedByTaming".Translate(), "Faunapedia.UnlockedByTamingDesc".Translate(), ref settings.unlockedByTaming);
             listing.CheckboxEnhanced("Faunapedia.UnknownShown".Translate(), "Faunapedia.UnknownShownDesc".Translate(), ref settings.unknownShown);
-            listing.CheckboxEnhanced("Faunapedia.HideLabels".Translate(), "Faunapedia.HideLabelsDesc".Translate(), ref settings.hideLabels);
+            //listing.CheckboxEnhanced("Faunapedia.HideLabels".Translate(), "Faunapedia.HideLabelsDesc".Translate(), ref settings.hideLabels);
             listing.CheckboxEnhanced("Faunapedia.UnknownSilhouettes".Translate(), "Faunapedia.UnknownSilhouettesDesc".Translate(), ref settings.unknownSilhouettes);
         }
     }

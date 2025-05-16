@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_Insectoid</defName>
+		<label>Insectoid</label>
+		<description>Show only animals which are considered Insectoids.</description>
+		<filterClass>Faunapedia.FaunaFilter_Insectoid</filterClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>

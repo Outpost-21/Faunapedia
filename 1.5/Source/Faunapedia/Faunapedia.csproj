@@ -74,6 +74,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\SearchMode.cs" />
+    <Compile Include="FaunaFilter\FaunaFilter.cs" />
+    <Compile Include="FaunaFilter\FaunaFilterDef.cs" />
+    <Compile Include="FaunaFilter\FaunaFilter_Trainability.cs" />
+    <Compile Include="FaunaFilter\FaunaFilter_PenAnimal.cs" />
+    <Compile Include="FaunaFilter\FaunaFilter_Dryad.cs" />
+    <Compile Include="FaunaFilter\FaunaFilter_Rideable.cs" />
+    <Compile Include="FaunaFilter\FaunaFilter_PackAnimal.cs" />
+    <Compile Include="FaunaFilter\FaunaFilter_Insectoid.cs" />
+    <Compile Include="FaunaFilter\FaunaFilter_Comp.cs" />
+    <Compile Include="Data\SortMethod.cs" />
     <Compile Include="Utilities\AnimalUtil.cs" />
     <Compile Include="Utilities\FindUtil.cs" />
     <Compile Include="MainTabWindow\MainTabWindow_Faunapedia.cs" />

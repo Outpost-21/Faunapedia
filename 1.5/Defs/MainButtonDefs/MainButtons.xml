@@ -8,6 +8,7 @@
 		<tabWindowClass>Faunapedia.MainTabWindow_Faunapedia</tabWindowClass>
 		<order>45</order>
 		<closesWorldView>true</closesWorldView>
+		<iconPath>Faunapedia/MainButtonIcon_Fauna</iconPath>
 	</MainButtonDef>
 
 </Defs>

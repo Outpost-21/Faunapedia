@@ -52,5 +52,20 @@ namespace Faunapedia
             }
             return false;
         }
+
+        public static bool IsSeenAnimal(this ThingDef thingDef)
+        {
+            return FindUtil.AnimalTracking.animalsSeen[thingDef];
+        }
+
+        public static bool IsTamedAnimal(this ThingDef thingDef)
+        {
+            return FindUtil.AnimalTracking.animalsTamed[thingDef];
+        }
+
+        public static bool IsHuntedAnimal(this ThingDef thingDef)
+        {
+            return false;
+        }
     }
 }
