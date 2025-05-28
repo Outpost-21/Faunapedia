@@ -53,12 +53,46 @@ namespace Faunapedia
                 return faunaFilterCounts;
             }
         }
-        public List<ThingDef> filteredFauna = new List<ThingDef>();
-        public List<ThingDef> FilteredFauna
+
+        public Dictionary<string, List<ThingDef>> animalsByGroup = new Dictionary<string, List<ThingDef>>();
+
+        public Dictionary<string, List<ThingDef>> AnimalsByGroup
         {
             get
             {
-                filteredFauna.Clear();
+                KeyValuePair<string, List<ThingDef>> ungrouped = new KeyValuePair<string, List<ThingDef>>("Unknown Source", new List<ThingDef>());
+                if (animalsByGroup.NullOrEmpty())
+                {
+                    foreach(ThingDef def in AnimalUtil.GetListableAnimals())
+                    {
+                        if (def.modContentPack != null)
+                        {
+                            if (!animalsByGroup.ContainsKey(def.modContentPack.Name))
+                            {
+                                animalsByGroup.Add(def.modContentPack.Name, new List<ThingDef>());
+                            }
+                            else
+                            {
+                                animalsByGroup[def.modContentPack.Name].Add(def);
+                            }
+                        }
+                        else
+                        {
+                            ungrouped.Value.Add(def);
+                        }
+                    }
+                }
+                animalsByGroup.Add(ungrouped.Key, ungrouped.Value);
+                return animalsByGroup;
+            }
+        }
+
+        public List<ThingDef> filteredFauna = new List<ThingDef>();
+        public List<ThingDef> FilteredFauna(string group = null)
+        {
+            filteredFauna.Clear();
+            if (group == null)
+            {
                 if (!faunaFilters.Values.Any(k => k == true))
                 {
                     return AnimalUtil.GetListableAnimals().Where(a => a.label.Contains(searchFilter)).ToList();
@@ -78,14 +112,37 @@ namespace Faunapedia
                         filteredFauna.Add(def);
                     }
                 }
-                return filteredFauna;
             }
+            else
+            {
+                if(!faunaFilters.Values.Any(k => k == true))
+                {
+                    return AnimalsByGroup[group].Where(a => a.label.Contains(searchFilter)).ToList();
+                }
+                foreach (ThingDef def in AnimalsByGroup[group].Where(a => a.label.Contains(searchFilter)).ToList())
+                {
+                    bool result = true;
+                    foreach (KeyValuePair<FaunaFilterDef, bool> filter in faunaFilters)
+                    {
+                        if (filter.Value && !filter.Key.Worker.FitsInFilter(def))
+                        {
+                            result = false;
+                        }
+                    }
+                    if (result)
+                    {
+                        filteredFauna.Add(def);
+                    }
+                }
+            }
+            return filteredFauna;
         }
 
         public float scrollHeightLeft;
         public float scrollHeightRight;
         public Vector2 scrollPos;
         public Vector2 scrollPos2;
+        public bool groupBySource = false;
 
         public float xPos = 0f;
         public float yPos = 0f;
@@ -188,7 +245,7 @@ namespace Faunapedia
 
                 Find.WindowStack.Add(new FloatMenu(list));
             }
-            listing.Gap();
+            listing.CheckboxLabeled("Group by Source", ref groupBySource);
             listing.GapLine();
             listing.Label("Filters");
             listing.GapLine();
@@ -207,10 +264,28 @@ namespace Faunapedia
 
         public void DoCardDisplay(Listing_Standard listing)
         {
-            float abCurY = 0f;
+            List<ThingDef> animalList = FilteredFauna().ToList();
+            if (groupBySource)
+            {
+                foreach (string group in AnimalsByGroup.Keys)
+                {
+                    listing.GapLine();
+                    listing.Label(group);
+                    listing.GapLine();
+                    DoGroup(listing, FilteredFauna(group));
+                }
+            }
+            else
+            {
+                DoGroup(listing, FilteredFauna());
+            }
+        }
+
+        public void DoGroup(Listing_Standard listing, List<ThingDef> animalList)
+        {
+            float abCurY = listing.curY + cardMarginY;
             float abCurX = 0f;
             int curCount = 0;
-            List<ThingDef> animalList = FilteredFauna.ToList();
             switch (sortMethod)
             {
                 case SortMethod.Alphanumeric_Descending:
@@ -253,8 +328,8 @@ namespace Faunapedia
                         abCurX += cardWidth + cardMarginX;
                     }
                 }
+                listing.curY = abCurY + (cardHeight + cardMarginY);
             }
-            listing.curY = abCurY + (cardHeight + cardMarginY);
         }
 
         public void DrawAnimalCard(Rect rect, Listing_Standard listing, ThingDef animalDef, bool obfuscate = false)
