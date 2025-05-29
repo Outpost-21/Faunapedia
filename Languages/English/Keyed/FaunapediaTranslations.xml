@@ -16,6 +16,6 @@
 	<Faunapedia.UnknownSource>Unknown Source</Faunapedia.UnknownSource>
 	<Faunapedia.GroupBySource>Group by Source</Faunapedia.GroupBySource>
 	<Faunapedia.Filters>Filters</Faunapedia.Filters>
-	<Faunapedia.FilerFormatting>{0} ({1})</Faunapedia.FilerFormatting>
+	<Faunapedia.FilterFormatting>{0} ({1})</Faunapedia.FilterFormatting>
 
 </LanguageData>

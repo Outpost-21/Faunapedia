@@ -9,6 +9,7 @@
 		<order>45</order>
 		<closesWorldView>true</closesWorldView>
 		<iconPath>Faunapedia/MainButtonIcon_Fauna</iconPath>
+    	<minimized>True</minimized>
 	</MainButtonDef>
 
 </Defs>
