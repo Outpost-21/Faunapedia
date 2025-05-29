@@ -172,7 +172,7 @@
               "RelativeDocumentMoniker": "MainTabWindow\\MainTabWindow_Faunapedia.cs",
               "ToolTip": "F:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.5\\Source\\Faunapedia\\MainTabWindow\\MainTabWindow_Faunapedia.cs",
               "RelativeToolTip": "MainTabWindow\\MainTabWindow_Faunapedia.cs",
-              "ViewState": "AgIAAP0AAAAAAAAAAAAswAoBAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAAFMAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-25T23:44:09.382Z",
               "EditorCaption": ""
@@ -187,8 +187,7 @@
               "RelativeToolTip": "FaunapediaSettings.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-25T23:16:27.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-25T23:16:27.737Z"
             },
             {
               "$type": "Document",

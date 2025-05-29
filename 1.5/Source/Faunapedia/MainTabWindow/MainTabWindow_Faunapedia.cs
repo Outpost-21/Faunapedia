@@ -81,8 +81,8 @@ namespace Faunapedia
                             ungrouped.Value.Add(def);
                         }
                     }
+                    animalsByGroup.Add(ungrouped.Key, ungrouped.Value);
                 }
-                animalsByGroup.Add(ungrouped.Key, ungrouped.Value);
                 return animalsByGroup;
             }
         }
