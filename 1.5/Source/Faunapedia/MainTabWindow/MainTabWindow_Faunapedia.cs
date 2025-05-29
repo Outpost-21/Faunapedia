@@ -60,7 +60,7 @@ namespace Faunapedia
         {
             get
             {
-                KeyValuePair<string, List<ThingDef>> ungrouped = new KeyValuePair<string, List<ThingDef>>("Unknown Source", new List<ThingDef>());
+                KeyValuePair<string, List<ThingDef>> ungrouped = new KeyValuePair<string, List<ThingDef>>("Faunapedia.UnknownSource".Translate(), new List<ThingDef>());
                 if (animalsByGroup.NullOrEmpty())
                 {
                     foreach(ThingDef def in AnimalUtil.GetListableAnimals())
@@ -142,7 +142,6 @@ namespace Faunapedia
         public float scrollHeightRight;
         public Vector2 scrollPos;
         public Vector2 scrollPos2;
-        public bool groupBySource = false;
 
         public float xPos = 0f;
         public float yPos = 0f;
@@ -245,9 +244,9 @@ namespace Faunapedia
 
                 Find.WindowStack.Add(new FloatMenu(list));
             }
-            listing.CheckboxLabeled("Group by Source", ref groupBySource);
+            listing.CheckboxLabeled("Faunapedia.GroupBySource".Translate(), ref FaunapediaMod.settings.groupBySource);
             listing.GapLine();
-            listing.Label("Filters");
+            listing.Label("Faunapedia.Filters".Translate());
             listing.GapLine();
             List<FaunaFilterDef> filterDefs = DefDatabase<FaunaFilterDef>.AllDefs.ToList();
             filterDefs.SortBy(f => f.defName);
@@ -256,7 +255,7 @@ namespace Faunapedia
                 if (faunaFilters.ContainsKey(def))
                 {
                     bool bufferBool = faunaFilters[def];
-                    listing.CheckboxLabeled(def.LabelCap + " (" + FaunaFilterCounts[def] + ")", ref bufferBool, def.description);
+                    listing.CheckboxLabeled("Faunapedia.FilterFormatting".Translate(def.LabelCap, FaunaFilterCounts[def]), ref bufferBool, def.description);
                     faunaFilters[def] = bufferBool;
                 }
             }
@@ -265,7 +264,7 @@ namespace Faunapedia
         public void DoCardDisplay(Listing_Standard listing)
         {
             List<ThingDef> animalList = FilteredFauna().ToList();
-            if (groupBySource)
+            if (FaunapediaMod.settings.groupBySource)
             {
                 foreach (string group in AnimalsByGroup.Keys)
                 {
