@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_PackAnimal</defName>
+		<label>Pack Animal</label>
+		<description>Show only animals which can be used as pack animals in a caravan.</description>
+		<filterClass>Faunapedia.FaunaFilter_PackAnimal</filterClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>

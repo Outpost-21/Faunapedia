@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_TrainabilityA</defName>
+		<label>Trainability: None</label>
+		<description>Show only animals which have no/minimal training capability.</description>
+		<filterClass>Faunapedia.FaunaFilter_TrainabilityNone</filterClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_TrainabilityB</defName>
+		<label>Trainability: Intermediate</label>
+		<description>Show only animals which have intermediate training capability.</description>
+		<filterClass>Faunapedia.FaunaFilter_TrainabilityIntermediate</filterClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_TrainabilityC</defName>
+		<label>Trainability: Advanced</label>
+		<description>Show only animals which have advanced training capability.</description>
+		<filterClass>Faunapedia.FaunaFilter_TrainabilityAdvanced</filterClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>

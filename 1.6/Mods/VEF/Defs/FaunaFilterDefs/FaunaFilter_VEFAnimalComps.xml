@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- ============================== ACID IMMUNITY ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_AcidImmunity</defName>
+		<label>Acid Immunity</label>
+		<description>Show only animals which have an acid immunity.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompAcidImmunity</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== OTHER RESOURCES ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_ProducesResources</defName>
+		<label>Produces Resources</label>
+		<description>Show only animals which produce resources but not through the vanilla milkable or shearable options.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompAnimalProduct</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== CARAVAN RESOURCES ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_CaravanResources</defName>
+		<label>Caravan Resources</label>
+		<description>Show only animals which produce resources while in a caravan.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompAnimalProductOnCaravan</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== ASEXUAL REPRODUCTION ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_AsexualReproduction</defName>
+		<label>Asexual Reproduction</label>
+		<description>Show only animals which reproduce asexually.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompAsexualReproduction</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== AUTO NUTRITION ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_AutoNutrition</defName>
+		<label>Auto Nutrition</label>
+		<description>Show only animals which consume something not visible to the player (for example, ants).\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompAutoNutrition</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== BLINK ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Blink</defName>
+		<label>Blink Teleporting</label>
+		<description>Show only animals which can "blink" uncontrollably between positions when wandering.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompBlink</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== BUILDS PERIODICALLY ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_BuildsPeriodically</defName>
+		<label>Builds Periodically</label>
+		<description>Show only animals which can periodically create buildings around them.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompBuildPeriodically</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== INCIDENT CAUSER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_IncidentCauser</defName>
+		<label>Incident Causer</label>
+		<description>Show only animals which can periodically create incidents, for example triggering an Aurora.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompCauseIncident</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== WEATHER CHANGER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_WeatherChanger</defName>
+		<label>Weather Changer</label>
+		<description>Show only animals which can change the weather when it spawns.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompChangeWeather</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== CORPSE DECAYER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_CorpseDecayer</defName>
+		<label>Corpse Decayer</label>
+		<description>Show only animals which can feed by decaying corpses near them.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompCorpseDecayer</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== DIES IN TIME ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_DieAfterPeriod</defName>
+		<label>Dies In Set Time</label>
+		<description>Show only animals which will die after a set amount of time.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompDieAfterPeriod</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== DIGS PERIODICALLY ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_DigsPeriodically</defName>
+		<label>Digs Periodically</label>
+		<description>Show only animals which can dig for resources periodically.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompDigPeriodically</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== DIGS WHEN HUNGRY ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_DigsWhenHungry</defName>
+		<label>Digs When Hungry</label>
+		<description>Show only animals which can dig for resources when they are hungry.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompDigWhenHungry</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== DISEASE IMMUNITY ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_DiseaseImmunity</defName>
+		<label>Disease Immunity</label>
+		<description>Show only animals which are immune to specific diseases.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompDiseaseImmunity</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== DOESN'T FLEE ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_DoesntFlee</defName>
+		<label>Doesn't Flee</label>
+		<description>Show only animals which will not flee from combat.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompDoesntFlee</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== DRAFTABLE ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Draftable</defName>
+		<label>Draftable</label>
+		<description>Show only animals which will are capable of being drafted by the player.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompDraftable</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== ELECTRIFIED ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Electrified</defName>
+		<label>Electrified</label>
+		<description>Show only animals which will are capable charging nearby batteries.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompElectrified</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== FLOATING ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Floating</defName>
+		<label>Floating</label>
+		<description>Show only animals which float, ignoring terrain movement costs.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompFloating</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== GAS PRODUCER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_GasProducer</defName>
+		<label>Gas Producer</label>
+		<description>Show only animals which spawn a cloud of gas around it.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompGasProducer</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== CARAVAN THOUGHT GIVER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_CaravanThoughtGiver</defName>
+		<label>Caravan Thought Giver</label>
+		<description>Show only animals which provide a thought to caravan members when in one, this can be a positive and/or negative thought.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompGiveThoughtsOnCaravan</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== HEALTH CONDITION GIVER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_HealthConditionGiver</defName>
+		<label>Health Condition Giver</label>
+		<description>Show only animals which provide a health condition to nearby pawns, details will vary depending on the animal.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompHediffEffecter</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== HIGHLY FLAMMABLE ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_HighlyFlammable</defName>
+		<label>Highly Flammable</label>
+		<description>Show only animals which receive a health condition other than the usual Burn when set on fire, for example permanent untreatable burns.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompHighlyFlammable</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== INFECTOR ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Infector</defName>
+		<label>Infector</label>
+		<description>Show only animals which have an attack with an extra chance to produce infections.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompInfecter</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== LIGHT NEED ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_LightNeed</defName>
+		<label>Light Need</label>
+		<description>Show only animals which require light to survive, they can survive through night but will need artificial light during longer periods of darkness like an eclipse.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompLightSustenance</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== METAMOROPHIC ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Metamorphic</defName>
+		<label>Metamorphic</label>
+		<description>Show only animals which can turn into a different animal after a given time.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompMetamorphosis</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== TAME NATURED ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_TameNatured</defName>
+		<label>Tame Natured</label>
+		<description>Show only animals which do not have any taming decay, they will remain tame and not return to the wild.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompNoTamingDecay</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== HEALER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Healer</defName>
+		<label>Healer</label>
+		<description>Show only animals which are capable of regenerating the wounds of nearby pawns, but not their own.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompPassiveRegenerator</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== FUEL PRODUCER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_FuelProducer</defName>
+		<label>Fuel Producer</label>
+		<description>Show only animals which are capable refueling specific nearby buildings. Details will vary depending on the animal.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompRefueling</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== REGENERATING ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Regenerating</defName>
+		<label>Regenerating</label>
+		<description>Show only animals which can regenerate their own wounds over time.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompRefueling</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== UNTAMEABLE ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Untameable</defName>
+		<label>Untameable</label>
+		<description>Show only animals which are not capable of being tamed, if they are tamed they will very quickly untame themselves.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompUntameable</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== THOUGHT GIVER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_ThoughtGiver</defName>
+		<label>Thought Giver</label>
+		<description>Show only animals which are capable of providing thoughts to nearby pawns. Varies by animal.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompThoughtEffecter</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+	<!-- ============================== SWALLOWER ============================== -->
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_VEF_Swallower</defName>
+		<label>Swallower</label>
+		<description>Show only animals which are capable of swallowing other pawns whole. Details will vary by animal.\n\nNote: Only covers specific modded animals using Vanilla Expanded Framework.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>VEF.AnimalBehaviours.CompSwallowWhole</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_Milkable</defName>
+		<label>Milkable</label>
+		<description>Show only animals which can be milked for a product.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>CompMilkable</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>

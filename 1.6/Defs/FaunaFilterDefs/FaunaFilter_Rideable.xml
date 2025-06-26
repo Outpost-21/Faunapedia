@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_Rideable</defName>
+		<label>Rideable</label>
+		<description>Shows only animals which are capable of being used as a mount in caravans.\n\nNote: Does not consider if an animal is mountable outside of caravans using a mod like Giddy Up.</description>
+		<filterClass>Faunapedia.FaunaFilter_Rideable</filterClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>

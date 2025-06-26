@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_EggLayer</defName>
+		<label>Egg Layer</label>
+		<description>Show only animals which can lay eggs.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>CompEggLayer</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>
