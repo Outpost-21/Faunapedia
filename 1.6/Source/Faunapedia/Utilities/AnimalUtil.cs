@@ -20,6 +20,19 @@ namespace Faunapedia
             return false;
         }
 
+        public static List<ThingDef> GetAllValidAnimals()
+        {
+            List<ThingDef> results = new List<ThingDef>();
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs)
+            {
+                if (def.IsFaunapediaAnimal())
+                {
+                    results.Add(def);
+                }
+            }
+            return results;
+        }
+
         public static List<ThingDef> GetListableAnimals()
         {
             List<ThingDef> results = new List<ThingDef>();

@@ -32,7 +32,7 @@ namespace Faunapedia
                 if (faunaFilterCounts.NullOrEmpty())
                 {
                     faunaFilterCounts = new Dictionary<FaunaFilterDef, int>();
-                    foreach (ThingDef def in AnimalUtil.GetListableAnimals())
+                    foreach (ThingDef def in AnimalUtil.GetAllValidAnimals())
                     {
                         foreach (KeyValuePair<FaunaFilterDef, bool> filter in faunaFilters)
                         {
@@ -40,11 +40,11 @@ namespace Faunapedia
                             {
                                 if (faunaFilterCounts.ContainsKey(filter.Key))
                                 {
-                                    faunaFilterCounts[filter.Key] += 1;
+                                    faunaFilterCounts[filter.Key] += (AnimalUtil.IsKnownAnimal(def) ? 1 : 0);
                                 }
                                 else
                                 {
-                                    faunaFilterCounts.Add(filter.Key, 1);
+                                    faunaFilterCounts.Add(filter.Key, (AnimalUtil.IsKnownAnimal(def) ? 1 : 0));
                                 }
                             }
                         }
@@ -107,7 +107,7 @@ namespace Faunapedia
                             result = false;
                         }
                     }
-                    if (result)
+                    if (result && AnimalUtil.IsKnownAnimal(def))
                     {
                         filteredFauna.Add(def);
                     }
@@ -129,7 +129,7 @@ namespace Faunapedia
                             result = false;
                         }
                     }
-                    if (result)
+                    if (result && AnimalUtil.IsKnownAnimal(def))
                     {
                         filteredFauna.Add(def);
                     }
@@ -179,11 +179,12 @@ namespace Faunapedia
             faunaFilters.Clear();
             foreach (FaunaFilterDef def in DefDatabase<FaunaFilterDef>.AllDefs)
             {
-                if (AnimalUtil.GetListableAnimals().Any(a => def.Worker.FitsInFilter(a)))
+                if (AnimalUtil.GetAllValidAnimals().Any(a => def.Worker.FitsInFilter(a)))
                 {
                     faunaFilters.Add(def, false);
                 }
             }
+            faunaFilterCounts.Clear();
         }
 
         public override void DoWindowContents(Rect inRect)

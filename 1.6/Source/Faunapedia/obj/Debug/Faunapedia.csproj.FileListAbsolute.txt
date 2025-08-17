@@ -6,4 +6,3 @@ F:\RWModCategories\Neronix17\_UI\Faunapedia\1.6\Source\Faunapedia\obj\Debug\Faun
 F:\RWModCategories\Neronix17\_UI\Faunapedia\1.6\Source\Faunapedia\obj\Debug\Faunapedia.csproj.CoreCompileInputs.cache
 F:\RWModCategories\Neronix17\_UI\Faunapedia\1.6\Source\Faunapedia\obj\Debug\Faunapedia.dll
 F:\RWModCategories\Neronix17\_UI\Faunapedia\1.6\Assemblies\Faunapedia.dll
-F:\RWModCategories\Neronix17\_UI\Faunapedia\1.6\Source\Faunapedia\obj\Debug\Faunapedia.csproj.Up2Date
