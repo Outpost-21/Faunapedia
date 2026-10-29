@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_PenAnimal</defName>
+		<label>Pen Animal</label>
+		<description>Show only animals which require a pen to keep them from leaving the colony.</description>
+		<filterClass>Faunapedia.FaunaFilter_PenAnimal</filterClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>

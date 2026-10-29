@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.7\\Source\\Faunapedia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|G:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.7\\Source\\Faunapedia\\obj\\Debug\\Faunapedia.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\Faunapedia.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4548956-D500-300C-1317-37170197B6DE}|Faunapedia.csproj|g:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.7\\source\\faunapedia\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4548956-D500-300C-1317-37170197B6DE}|Faunapedia.csproj|solutionrelative:properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4548956-D500-300C-1317-37170197B6DE}|Faunapedia.csproj|g:\\rwmodcategories\\neronix17\\_ui\\faunapedia\\1.7\\source\\faunapedia\\faunapediamod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4548956-D500-300C-1317-37170197B6DE}|Faunapedia.csproj|solutionrelative:faunapediamod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Faunapedia.AssemblyInfo.cs",
+              "DocumentMoniker": "G:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.7\\Source\\Faunapedia\\obj\\Debug\\Faunapedia.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\Faunapedia.AssemblyInfo.cs",
+              "ToolTip": "G:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.7\\Source\\Faunapedia\\obj\\Debug\\Faunapedia.AssemblyInfo.cs",
+              "RelativeToolTip": "obj\\Debug\\Faunapedia.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T16:55:14.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "G:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.7\\Source\\Faunapedia\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
+              "ToolTip": "G:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.7\\Source\\Faunapedia\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T16:55:04.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FaunapediaMod.cs",
+              "DocumentMoniker": "G:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.7\\Source\\Faunapedia\\FaunapediaMod.cs",
+              "RelativeDocumentMoniker": "FaunapediaMod.cs",
+              "ToolTip": "G:\\RWModCategories\\Neronix17\\_UI\\Faunapedia\\1.7\\Source\\Faunapedia\\FaunapediaMod.cs",
+              "RelativeToolTip": "FaunapediaMod.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowCEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T16:54:47.327Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

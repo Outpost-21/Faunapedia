@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<Faunapedia.FaunaFilterDef>
+		<defName>Faunapedia_A_Shearable</defName>
+		<label>Shearable</label>
+		<description>Show only animals which can be sheared for a product.</description>
+		<filterClass>Faunapedia.FaunaFilter_Comp</filterClass>
+		<compClass>CompShearable</compClass>
+	</Faunapedia.FaunaFilterDef>
+
+</Defs>
